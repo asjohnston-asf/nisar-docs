@@ -1,5 +1,8 @@
 # Geocoded Polarimetric Covariance
 
+{button}`Product Specification <https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-102274_RevE_NASA_SDS_Product_Specification_L2_GCOV_Nov8_2024_w-sigs.pdf>`
+{button}`Find Data <https://search.asf.alaska.edu/#/?dataset=NISAR&sciProducts=GCOV>`
+
 ## Product Overview
 
 Geocoded Polometric Covariance (GCOV) products provide calibrated backscatter measurements corrected for both radiometric and terrain distortions. For users familiar with SAR amplitude products, these data can be used like Normalized Radar Backscatter (NRB) or Radiometrically Terrain-Corrected (RTC) products.
@@ -8,46 +11,37 @@ Due to the side-looking nature of NISAR, topography can significantly affect the
 
 Download-ready GCOV products are projected to their appropriate UTM zone and have a pixel spacing of 10 or 20 meters, depending on acquisition location. Each product includes a covariance variable for each polarization available from acquisition.
 
-## Finding Data
-
-{button}`Find in Vertex<https://search.asf.alaska.edu/#/?dataset=NISAR&sciProducts=GCOV>`
-
-{button}`Find in Earthdata Search<https://search.earthdata.nasa.gov/search?q=nisar_l2_gcov_&ac=true>`
-
 ## Product Specification
 
-{button}`Product Specification<https://nisar.asf.earthdatacloud.nasa.gov/NISAR-SAMPLE-DATA/DOCS/NISAR_D-102274_RevE_NASA_SDS_Product_Specification_L2_GCOV_Nov8_2024_w-sigs.pdf>`
+A complete description of NISAR GCOV products is available in @l2_gcov_product_specs2025.
 
 ## Data Layers
 
-A GCOV data product includes the following raster data sets. For a more detailed description of these data layers, see @l2_gcov_product_specs2025 [Section 4.3].
+A GCOV data product includes the following raster data sets. Complete descriptions of these data layers are available in @l2_gcov_product_specs2025 [Section 4.3].
 
 ### Geocoded Polarimetric Covariance Terms
-```
-/science/LSAR/GCOV/grids/frequency[A|B]/HHHH
-/science/LSAR/GCOV/grids/frequency[A|B]/HVHV
-/science/LSAR/GCOV/grids/frequency[A|B]/HHHV
-/science/LSAR/GCOV/grids/frequency[A|B]/HHVH
-/science/LSAR/GCOV/grids/frequency[A|B]/HHVV
-/science/LSAR/GCOV/grids/frequency[A|B]/HVVH
-/science/LSAR/GCOV/grids/frequency[A|B]/HVVV
-/science/LSAR/GCOV/grids/frequency[A|B]/VVVV
-/science/LSAR/GCOV/grids/frequency[A|B]/VHVH
-/science/LSAR/GCOV/grids/frequency[A|B]/VHVV
-/science/LSAR/GCOV/grids/frequency[A|B]/RHRH
-/science/LSAR/GCOV/grids/frequency[A|B]/RVRV
-/science/LSAR/GCOV/grids/frequency[A|B]/RHRV
-```
 
-The primary data elements of the GCOV product are the images of the geocoded polarimetric covariance terms.
+`/science/LSAR/GCOV/grids/frequency[A|B]/HHHH` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/HVHV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/HHHV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/HHVH` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/HHVV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/HVVH` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/HVVV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/VVVV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/VHVH` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/VHVV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/RHRH` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/RVRV` \
+`/science/LSAR/GCOV/grids/frequency[A|B]/RHRV`
+
+The primary data elements of the GCOV product are the images of the geocoded polarimetric covariance terms. Visit @nisarPolarimetry to learn more about NISAR polarimetry.
 
 The diagonal terms (HHHH, HVHV, VVVV, VHVH, RHRH, RVRV) are real-valued and describe the intensity of the radar backscatter for the given polarization.
 
 The remaining terms (HHHV, HHVH, HHVV, HVVH, HVVV, VHVV, RHRV) are complex-valued and describe the intensity and phase between different polarization.
 
 Which frequencies and polarizations are available in a particular GCOV data product will vary based on the acquisition mode of the satellite used to collect the data.
-
-For more information on NISAR polarimetry, see @nisarPolarimetry
 
 ### Number of Looks
 
@@ -153,3 +147,10 @@ CTR
 EXT
 : 1 to n chars for Extension: h5, met, log
 :::
+
+## Finding Data
+
+GCOV products can be found in Vertex by setting the Dataset filter to "NISAR" and the Science Product filter to "GCOV (Geocoded Polarimetric Covariance)":
+[Find Data in Vertex](https://search.asf.alaska.edu/#/?dataset=NISAR&sciProducts=GCOV)
+
+GCOV products can be found in Earthdata Search by searching for "NISAR_L2_GCOV_": [Find Data in Earthdata Search](https://search.earthdata.nasa.gov/search?q=nisar_l2_gcov_&ac=true)

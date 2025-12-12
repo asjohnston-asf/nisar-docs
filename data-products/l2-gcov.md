@@ -77,3 +77,88 @@ The mask layer provides information about the averaging ensemble of radar sample
 The RTC Gamma-to-Sigma factor provides factors to normalize the backscatter normalization convention of the GCOV matrix from gamma0 to sigma0.
 
 ## Naming Convention
+
+NISAR GCOV product names will conform to the following naming convention:
+
+{term}`NISAR`\_{term}`I`{term}`L`\_{term}`PT`\_{term}`PROD`\_{term}`CYL`\_{term}`REL`\_{term}`P`\_{term}`FRM`\_{term}`MODE`\_{term}`POLE`\_{term}`S`\_{term}`StartDateTime`\_{term}`EndDateTime`\_{term}`CRID`\_{term}`A`\_{term}`C`\_{term}`LOC`\_{term}`CTR`.{term}`EXT`
+
+:::{glossary}
+NISAR
+: 5 char for mission: NISAR
+
+I
+: 1 char for Instrument: L for L-SAR, S for S-SAR
+
+L
+: 1 char for Level: 1 or 2 or 3
+
+PT
+: 2 char for Processing Type:
+    - PR: Production
+    - UR: Urgent Response
+    - OD: Science On-Demand
+
+PROD
+: 4 chars for Product Identifier: GCOV
+
+CYL
+: 3 chars for CycLe number in the mission, each cycle represents 12 days, zero padded, starting at 001.
+
+REL
+: 3 chars for RELative orbit track number within a cycle, resets to 1 with a cycle number increment, zero padded.Valid values: 001-173.
+
+P
+: 1 char for direction of movement of the satellite at the time of imaging
+    - A for Ascending
+    - D for Descending
+
+FRM
+: 3 chars for track frame number, a segment of an orbital track corresponding to theproduct, zero padded Valid Values: 001-176 on each track.
+
+MODE
+: 4 chars for Bandwidth Mode Code of Primary and Secondary Bands:
+    - 40, 20, 77, 05, or 00 (only if the secondary band is missing)
+
+POLE
+: 4 chars for Polarization of the data for the primary and secondary bands. Each band uses a two character code among the following:
+    - SH = HH – Single Polarity (H transmit and receive)
+    - SV = VV – Single Polarity (V transmit and receive)
+    - DH = HH/HV – Dual Polarity (H transmit)
+    - DV = VV/VH – Dual Polarity (V transmit)
+    - CL= LH/LV – Compact Polarity (Left transmit)
+    - CR = RH/RV – Compact Polarity (Right transmit)
+    - QP = HH/HV/VV/VH – Quad Polarity
+    - NA if band does not exist
+    For example, a “quasi-quad” polarization mode would be noted DHDV while a “quasidual” polarization mode would be noted SHSV.
+
+S
+: 1 char for source of data for the product
+    - A = Acquired source of the observation, single mode
+    - M = Mixed source of observations, mixed mode
+
+StartDateTime
+: 15 chars for Radar Start Time of the data processed as zero Doppler contained in the file as YYYYMMDDTHHMMSS, UTC
+
+EndDateTime
+: 15 chars for Radar End Time of the data processed as zero Doppler contained in the file as YYYYMMDDTHHMMSS, UTC
+
+CRID
+: 6 chars for Composite Release Identifier
+    - Format of EPMMmm.
+
+A
+: 1 char for Product Accuracy or Fidelity of the Orbit Ephermis and Radar Pointing:
+    - P, M, N, or F.
+
+C
+: 1 char as Coverage Indicator: F for Full or P for Partial.
+
+LOC
+: 1 char to represent the location of the Science Data System. J for JPL,vrecommends N for NRSC.
+
+CTR
+: 3 chars for Product Counter (zero padded).
+
+EXT
+: 1 to n chars for Extension: h5, met, log
+:::

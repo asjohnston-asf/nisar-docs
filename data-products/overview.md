@@ -36,7 +36,7 @@ The table below summarizes the characteristics of NISAR data products with respe
     <tr>
         <td style="border: 1px solid black">ROFF</td>
         <td style="text-align: center; border: 1px solid black;">90</td>
-        <td style="text-align: center; border: 1px solid black;">&nbsp;</td>
+        <td style="text-align: center; border: 1px solid black;">&#x2714;</td>
         <td style="text-align: center; border: 1px solid black;">&nbsp;</td>
         <td style="border: 1px solid black">along-track offset, slant range offset<br>(three layers)</td>
         <td style="border: 1px solid black">offset variances,<br>correlation surface peak,<br>cross offset variance,<br>signal-to-noise ratio</td>
@@ -45,7 +45,7 @@ The table below summarizes the characteristics of NISAR data products with respe
     <tr>
         <td style="border: 1px solid black">GOFF</td>
         <td style="text-align: center; border: 1px solid black;">80</td>
-        <td style="text-align: center; border: 1px solid black;">&nbsp;</td>
+        <td style="text-align: center; border: 1px solid black;">&#x2714;</td>
         <td style="text-align: center; border: 1px solid black;">&#x2714;</td>
         <td style="border: 1px solid black">along-track offset, slant range offset<br>(three layers)</td>
         <td style="border: 1px solid black">offset variances,<br>correlation surface peak,<br>cross offset variance,<br>signal-to-noise ratio</td>

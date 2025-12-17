@@ -28,7 +28,7 @@ Source for the public documentation of the NASA-ISRO Synthetic Aperture Radar (N
       2. `DOMAIN` with a value of `https://{github_user_id}.github.io`
       <details>
       <summary>screenshot</summary>
-      <img alt="screenshot of creating BASE_URL variable" src="assets/readme_base_url_variable.png" />
+      <img alt="screenshot of creating BASE_URL variable" src="assets/readme_variables.png" />
       </details>
    1. Push changes to your `main` branch
    1. Preview the rendered site at `https://{github_user_id}.github.io/nisar-docs/`

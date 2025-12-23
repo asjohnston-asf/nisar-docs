@@ -29,7 +29,7 @@
 - [Subsidence (2/26/2017)](https://assets.science.nasa.gov/content/dam/science/missions/nisar/nisar-jpl/pdf/NISAR_Applications_Subsidence.pdf)  
 
 ## Mission-Specific Documents
-- [NASA-ISRO SAR (NISAR) Mission Science Users' Handbook (8/1/2019)](https://assets.science.nasa.gov/content/dam/science/missions/nisar/nisar-jpl/pdf/NISAR_FINAL_9-6-19.pdf)  
+- [NASA-ISRO SAR (NISAR) Mission Science Users' Handbook, Second Edition](@nisarMissionHandbook2025)  
 - [NISAR Utilization Plan (9/4/2018)](https://assets.science.nasa.gov/content/dam/science/missions/nisar/nisar-jpl/pdf/NISAR_Utilization_Plan.pdf)  
 - [NISAR Mission Calibration and Validation Plan (5/14/2018)](https://assets.science.nasa.gov/content/dam/science/missions/nisar/nisar-jpl/pdf/NISAR_Mission_CalVal_Plan_20180810.pdf)  
 

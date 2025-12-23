@@ -10,9 +10,8 @@ This guide aims to help those who research and monitor the Earth find all the in
 
 :::{image} assets/nisar_satellite.jpg
 :name: nisar-satellite
+:target: "https://nisar.jpl.nasa.gov/resources/206/nisar-satellite-in-earth-orbit-artists-concept/"
 :::
+_[NISAR Satellite in Earth Orbit (Artist's Concept)](https://nisar.jpl.nasa.gov/resources/206/nisar-satellite-in-earth-orbit-artists-concept/)_
 
 
-![NISAR satellite](assets/nisar_satellite.jpg 'NISAR satellite')
-
-[NISAR Satellite in Earth Orbit (Artist's Concept)](https://nisar.jpl.nasa.gov/resources/206/nisar-satellite-in-earth-orbit-artists-concept/)

@@ -10,60 +10,67 @@ project:
       enabled: true
   toc:
     - file: index.md
-    - title: About NISAR
-      children:
-        - file: about-nisar/nisar-intro.md
-        - file: about-nisar/instrumentation.md
-        - file: about-nisar/product-specification.md
-        - file: about-nisar/atbd.md
-        - file: about-nisar/data-use-citation-guidance.md
+    - file: about-nisar/nisar-intro.md
     - title: Data Products
       children:
-        - file: data-products/overview.md
-        - title: Level 3
+        - file: data-products/products-overview.md
+        - title: Geophysical Products (Level 3)
           children:
             - file: data-products/level-3/sme2.md
-        - title: Level 2
+        - title: Geocoded Products (Level 2)
           children:
             - file: data-products/level-2/gslc.md
             - file: data-products/level-2/goff.md
             - file: data-products/level-2/gunw.md
             - file: data-products/level-2/gcov.md
-        - title: Level 1
+        - title: Range-Doppler Products (Level 1)
           children:
             - file: data-products/level-1/rslc.md
             - file: data-products/level-1/rifg.md
             - file: data-products/level-1/roff.md
             - file: data-products/level-1/runw.md
-        - title: Level 0
+        - title: Unfocused Raw Products (Level 0)
           children:
             - file: data-products/level-0/rrsd.md
+        - file: data-products/naming-conventions.md
         - file: data-products/supporting-products.md
         - file: data-products/data-format.md
         - file: data-products/metadata.md
-        - file: data-products/software-support.md
+        - title: Documentation
+          children:
+            - file: data-products/product-specification.md
+            - file: data-products/atbd.md
+    - title: Accessing NISAR Data
+      children:
+        - file: accessing-nisar/access-overview.md
+        - file: accessing-nisar/vertex.md
+        - file: accessing-nisar/earthdata-search.md
+        - file: accessing-nisar/asf-search.md
+        - file: accessing-nisar/earthaccess.md
+    - title: Using NISAR Data
+      children:
+        - file: using-nisar/using-overview.md
+        - file: using-nisar/software-support.md
+        - file: using-nisar/data-use-citation-guidance.md
+    - title: NISAR Tutorials
+      children:
+        - file: tutorials/tutorials-overview.md
+        - file: tutorials/storymaps.md
+        - file: tutorials/python-cookbooks.md
+        - file: tutorials/mission-homepage-tutorials.md
     - title: Applications
       children:
-        - file: applications/overview.md
+        - file: applications/applications-overview.md
         - file: applications/amplitude.md
         - file: applications/phase.md
-    - file: getting-nisar-data.md
     - title: User Support
       children:
         - file: user-support/documents.md
-        - file: user-support/storymaps.md
-        - file: user-support/mission-homepage-tutorials.md
         - file: user-support/earthdata-forum.md
-        - file: user-support/faqs.md
     - title: Appendices
       children:
         - file: appendices/acronyms.md
         - file: appendices/glossary.md
-        - title: Naming Conventions
-          children:
-            - file: appendices/naming-conventions/raw.md
-            - file: appendices/naming-conventions/single.md
-            - file: appendices/naming-conventions/interferometric.md
   abbreviations:
     DEM: Digital Elevation Model
     GCOV: Geocoded Polarimetric Covariance
@@ -75,6 +82,6 @@ project:
 site:
   template: book-theme
   options:
-    logo_text: "NISAR User Guide"
+    logo_text: 'NISAR Data User Guide'
   parts:
     primary_sidebar_footer: ''

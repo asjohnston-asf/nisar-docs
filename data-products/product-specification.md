@@ -1,8 +1,8 @@
 # Product Specifications
 
-The NISAR mission produces a range of data products, including Level 0 unfocused raw data, Level 1 Range-Doppler products, Level 2 Geocoded products and Level 3 Geophysical products. Refer to the [Data Products](../data-products) section to learn more about the available NISAR products.  
+<!-- TODO: Is this page really necessary if we're linking to the product specs from the individual product pages? Maybe it's handy to have them all listed in one place, but otherwise we could just remove this page. Or move it to a reference document section that has all the ATBDs, etc. -->
 
-These links to the current versions of the product specification documents are also available on the [NISAR Sample Data Product Suite](https://nisar.jpl.nasa.gov/data/sample-data/) website.  
+The NISAR mission produces a range of data products, including Level 0 unfocused raw data, Level 1 Range-Doppler products, Level 2 Geocoded products and Level 3 Geophysical products, as described in the other content in this section. Here is a list of the product specification documents for each of the mission-generated products available for NISAR. 
    
 - Level-0B Radar Raw Signal Data and Calibration Product [@l0b_rrsd_product_specs2025]  
 - Level-1 Range Doppler Single Look Complex [@l1_rslc_product_specs2025]  

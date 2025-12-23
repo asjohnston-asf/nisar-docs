@@ -63,7 +63,6 @@ project:
         - file: applications/applications-overview.md
         - file: applications/amplitude.md
         - file: applications/phase.md
-    - file: getting-nisar-data.md
     - title: User Support
       children:
         - file: user-support/documents.md

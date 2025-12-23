@@ -1,4 +1,4 @@
-# White papers and documents
+# White Papers and Documents
 
 ## Application white papers
 - [Mountain Glaciers and Snow Hydrology (4/15/2023)](https://assets.science.nasa.gov/content/dam/science/missions/nisar/nisar-jpl/pdf/SnowHydrology_Final.pdf)  

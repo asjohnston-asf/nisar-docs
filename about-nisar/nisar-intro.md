@@ -18,7 +18,7 @@ Refer to NASA's [NISAR Mission](https://science.nasa.gov/mission/nisar/) website
 ```{image} ../assets/nisar-mission-page.png
 :name: nisar-mission-page
 :alt: NASA NISAR Mission Website Image
-:target: @nisar_mission_page
+:target: {https://doi.org/10.17226/11820}
 ```
 
 ### NISAR Science Objectives

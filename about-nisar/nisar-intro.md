@@ -4,7 +4,7 @@
 
 ### The NISAR Mission
 
-NISAR is a joint Earth-observing mission between [National Aeronautics and Space Administration (NASA)](https://www.nasa.gov/) and the [Indian Space Research Organization (ISRO)](https://www.isro.gov.in/), with the goal to make global measurements of the causes and consequences of land surface changes using advanced radar imaging. Access to NISAR mission data is free and open.
+NISAR is a joint Earth-observing mission between the [National Aeronautics and Space Administration (NASA)](https://www.nasa.gov/) and the [Indian Space Research Organization (ISRO)](https://www.isro.gov.in/), with the goal to make global measurements of the causes and consequences of land surface changes using advanced radar imaging. Access to NISAR mission data is free and open.
 
 The mission concept and the resulting partnership were in response to the [National Academy of Science's 2007 Decadal Survey](https://doi.org/10.17226/11820) [@decadalSurvey2007] of Earth observational priorities for the next decade. 
 

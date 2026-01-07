@@ -15,7 +15,7 @@ One of the top priorities identified in this survey was to gain data and insight
 
 Refer to NASA's [NISAR Mission](https://science.nasa.gov/mission/nisar/) website for more information.
 
-<a href="https://doi.org/10.17226/11820">
+<a href="https://science.nasa.gov/mission/nisar/">
 <img id="nisar-mission-page" src="../assets/nisar-mission-page.png" alt="NASA NISAR Mission Website Image">
 </a>
 

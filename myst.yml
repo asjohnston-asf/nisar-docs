@@ -73,11 +73,16 @@ project:
         - file: appendices/acronyms.md
         - file: appendices/glossary.md
   abbreviations:
+    AWS: Amazon Web Services
+    DAAC: Distributed Active Archive Center
     DEM: Digital Elevation Model
+    EDC: Earthdata Cloud
+    ESDIS: Earth Science Data and Information System
     GCOV: Geocoded Polarimetric Covariance
     NISAR: NASA-ISRO Synthetic Aperture Radar
     NRB: Normalized Radar Backscatter
     RTC: Radiometric Terrain Correction; Radiometrically Terrain-Corrected
+    SAR: Synthetic Aperture Radar
     UTM: Universal Transverse Mercator
     RSLC: Range Doppler Single Look Complex
 site:

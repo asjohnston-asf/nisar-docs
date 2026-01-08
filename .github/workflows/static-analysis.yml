@@ -1,6 +1,8 @@
 name: Static analysis
 
-on: push
+on:
+  push:
+  pull_request:
 
 jobs:
   call-secrets-analysis-workflow:

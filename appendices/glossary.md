@@ -5,7 +5,6 @@
 :::{glossary}
 
 Full-polarimetric covariance matrix
-: The polarimetric covariance matrix $[G_3]$ is then radiometric terrain corrected and geocoded using an area-based projection algorithm, producing the GCOV matrix. 
 : Calculated by
     :::{math}
     :enumerated: false
@@ -16,6 +15,7 @@ Full-polarimetric covariance matrix
     <S_{VV}S^*_{HH}> & <S_{VV}\overline{S}^*_{HV}> & <S_{VV}S^*_{VV}>
     \end{bmatrix}
     :::
+: The polarimetric covariance matrix $[G_3]$ is then radiometric terrain corrected and geocoded using an area-based projection algorithm, producing the GCOV matrix. 
 
 Geolocation accuracy
 : The NISAR geolocation accuracy can be potentially affected by {term}`tropospheric delay`, {term}`solid earth tides (SET)` and {term}`ionospheric delay` [@yunjun2022].

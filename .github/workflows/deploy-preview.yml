@@ -1,0 +1,54 @@
+name: MyST GitHub Pages Deploy
+
+on:
+  pull_request:
+    branches:
+      - main
+
+env:
+  # `BASE_URL` determines, relative to the root of the domain, the URL that your site is served from.
+  # E.g., if your site lives at `https://mydomain.org/myproject`, set `BASE_URL=/myproject`.
+  # If, instead, your site lives at the root of the domain, at `https://mydomain.org`, set `BASE_URL=''`.
+  BASE_URL: ${{ vars.PREVIEW_BASE_URL }}/${{ github.event.number }}
+  # `DOMAIN` is a workaround for https://github.com/jupyter-book/myst-theme/issues/669:
+  # - robots.txt,sitemap.xml as well as some other files use "localhost:3000" url
+  DOMAIN: ${{ vars.PREVIEW_DOMAIN }}
+
+permissions:
+  contents: read
+
+concurrency:
+  group:  ${{ github.workflow }}-${{ github.event.number }}
+
+jobs:
+  deploy-preview:
+    if: ${{ ! github.event.repository.fork }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          path: main
+
+      - uses: actions/checkout@v6
+        with:
+          repository: ${{ vars.PREVIEW_REPOSITORY }}
+          path: preview
+          token: ${{ secrets.PREVIEW_TOKEN }}
+
+      - uses: mamba-org/setup-micromamba@v2
+        with:
+          environment-file: main/environment.yml
+
+      - run: |
+          cd main
+          myst build --html
+          sed -i -e "s|http://localhost:3000|$DOMAIN$BASE_URL|g" $(grep -RIl "http://localhost:3000" ./_build)
+          mv _build/html ../preview/${{ github.event.number }}
+
+          cd ../preview
+          git add ${{ github.event.numnber }}
+          git commit -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
+          git push

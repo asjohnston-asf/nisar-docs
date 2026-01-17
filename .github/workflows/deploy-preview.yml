@@ -49,9 +49,9 @@ jobs:
           cd ..
 
           rm -R preview//${{ github.event.number }}
-          mv main/_build/html ../preview/${{ github.event.number }}
+          mv main/_build/html preview/${{ github.event.number }}
 
           cd preview
           git add ${{ github.event.numnber }}
-          git commit -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
+          git commit --author "Andrew Johnston <asjohnston@alaska.edu>" -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
           git push

@@ -43,13 +43,12 @@ jobs:
           sed -i -e "s|http://localhost:3000|$DOMAIN$BASE_URL|g" $(grep -RIl "http://localhost:3000" ./_build)
           cd ..
 
+          rm -R preview/${{ github.event.number }}
+          mv main/_build/html preview/${{ github.event.number }}
+
           cd preview
-          git config user.email "asjohnston@alaska.edu"
-          git config user.name "Andrew Johnston"
-
-          git rm -r ${{ github.event.number }}
-          mv ../main/_build/html ${{ github.event.number }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add ${{ github.event.number }}
-
           git commit -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
           git push

@@ -1,4 +1,4 @@
-name: MyST GitHub Pages Deploy
+name: Deploy site preview from PR
 
 on:
   pull_request:
@@ -46,9 +46,12 @@ jobs:
           cd main
           myst build --html
           sed -i -e "s|http://localhost:3000|$DOMAIN$BASE_URL|g" $(grep -RIl "http://localhost:3000" ./_build)
-          mv _build/html ../preview/${{ github.event.number }}
+          cd ..
 
-          cd ../preview
+          rm -R preview//${{ github.event.number }}
+          mv main/_build/html ../preview/${{ github.event.number }}
+
+          cd preview
           git add ${{ github.event.numnber }}
           git commit -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
           git push

@@ -6,12 +6,7 @@ on:
       - main
 
 env:
-  # `BASE_URL` determines, relative to the root of the domain, the URL that your site is served from.
-  # E.g., if your site lives at `https://mydomain.org/myproject`, set `BASE_URL=/myproject`.
-  # If, instead, your site lives at the root of the domain, at `https://mydomain.org`, set `BASE_URL=''`.
   BASE_URL: ${{ vars.PREVIEW_BASE_URL }}/${{ github.event.number }}
-  # `DOMAIN` is a workaround for https://github.com/jupyter-book/myst-theme/issues/669:
-  # - robots.txt,sitemap.xml as well as some other files use "localhost:3000" url
   DOMAIN: ${{ vars.PREVIEW_DOMAIN }}
 
 permissions:
@@ -54,7 +49,7 @@ jobs:
 
           git rm -r ${{ github.event.number }}
           mv ../main/_build/html ${{ github.event.number }}
-          git add ${{ github.event.numnber }}
+          git add ${{ github.event.number }}
 
           git commit -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
           git push

@@ -57,4 +57,4 @@ jobs:
       - if: github.event.action == 'opened'
         uses: thollander/actions-comment-pull-request@v3
         with:
-          message: Preview deployed to $DOMAIN$BASE_URL
+          message: Preview deployed to ${{ env.DOMAIN }}${{ env.BASE_URL }}

@@ -52,6 +52,9 @@ jobs:
           mv main/_build/html preview/${{ github.event.number }}
 
           cd preview
+          git config user.email "asjohnston@alaska.edu"
+          git config user.name "Andrew Johnston"
+
           git add ${{ github.event.numnber }}
-          git commit --author "Andrew Johnston <asjohnston@alaska.edu>" -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
+          git commit -m "deploy preview for PR #${{ github.event.number }} commit ${{ github.sha }}"
           git push

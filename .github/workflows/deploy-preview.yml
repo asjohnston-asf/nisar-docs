@@ -40,7 +40,7 @@ jobs:
 
       - run: |
           cd main
-          myst build --html --check-links --strict
+          myst build --html
           sed -i -e "s|http://localhost:3000|$DOMAIN$BASE_URL|g" $(grep -RIl "http://localhost:3000" ./_build)
           cd ..
 

@@ -13,6 +13,12 @@ A small collection of NISAR sample data products are now available to the public
 [Learn more about this dataset and the expected timeline for additional product releases](#nisar-sample-data-jan).
 :::
 
+:::{important}NISAR Data Product Availability
+A small collection of NISAR sample data products is now available to the public! 
+
+[Learn more about this dataset and the expected timeline for additional product releases](#nisar-sample-data-jan).
+:::
+
 (nisar-product-levels)=
 ## NISAR Product Levels
 

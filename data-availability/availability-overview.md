@@ -51,7 +51,7 @@ There are known limitations in the sample products. Keep these in mind when work
 1. Quad-polarimetric (QP) product noise layers: In the QP products, the noiseEquivalentBackscatter layer for the HH polarimetric channel is incorrectly populated with zeros. The noiseEquivalentBackscatter layers for the HV and VV polarimetric channels are populated with correct (uncalibrated) values.
 
 1. The Geocoded Unwrapped (GUNW) interferogram product has three known limitations:
-   * The wrapped interferogram layer within the GUNW product are incorrectly georeferenced. This limitation does not apply to other layers in the GUNW product.
+   * The wrapped interferogram layer within the GUNW products is incorrectly georeferenced. This limitation does not apply to other layers in the GUNW product.
    * The boundary of the ionospheric phase layer has edge-effect artifacts. These artifacts will be minimized in a future release.
    * Interferogram generation does not yet use the full “rubbersheeting” algorithm to estimate local image distortions due to deformation. This capability is important for fast-moving areas in global production but is not critical for the present sample products, which exhibit modest deformation.  The algorithm used here for alignment of radar imagery (coregistration) is based on geometrical offsets (derived from imaging geometry of the NISAR acquisitions, orbit, and a digital elevation model) refined with a polynomial fit to the data-driven dense offsets computed from amplitude cross correlation of the radar data.
 

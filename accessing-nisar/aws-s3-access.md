@@ -180,7 +180,7 @@ To copy S3 URLs from Earthdata Search:
 (s3-limitations)=
 ## Limitations
 
-Please note that S3 Access for NISAR data is subject to these limitations:
+Please note that direct S3 access for NISAR data is subject to these limitations:
 - Temporary credentials only allow access from within the us-west-2 region. Users attempting to access the NISAR S3 bucket from other regions or outside AWS will encounter an `Access Denied` error.
 - Temporary credentials expire after one hour. The expiration time is listed in the temporary credential payload, as shown in [Step 1](#s3-creds-step-1). You can revisit [the temporary credential link](https://nisar.asf.earthdatacloud.nasa.gov/s3credentials) for a new set of credentials when they expire. 
 - Temporary credentials cannot be used to copy content directly from the NISAR S3 bucket to another S3 bucket. Users can only download content or use tools that interact with the data directly in S3 storage.

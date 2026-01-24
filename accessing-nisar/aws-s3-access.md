@@ -56,7 +56,7 @@ For a full list of exportable variables, see [AWS's Temporary Credentials User G
 
 ### 3. Find NISAR products of interest
 
-NISAR data is all hosted in the `sds-n-cumulus-prod-nisar-products` S3 bucket. Each product type has a prefix, and while you cannot list the full bucket contents, you can list the contents of each prefix. Refer to @prefix-structure for more information on the organization of the NISAR bucket and a [table of prefixes](#tbl:s3-prefix-list-products) for the NISAR data products.
+NISAR data is all hosted in the `sds-n-cumulus-prod-nisar-products` S3 bucket. Each product type has a prefix, and while you cannot list the full bucket contents, you can list the contents of each prefix. Refer to @prefix-structure for more information about the organization of the NISAR bucket and a [table of prefixes](#tbl:s3-prefix-list-products) for the NISAR data products.
 
 For example, if you want to see all available GCOV products, you can use this `aws s3 ls` command: 
 ```
@@ -131,7 +131,7 @@ Here is an example of the S3 path for one of the available GCOV products:
 
 ## Finding S3 Paths
 
-As more data becomes available, you may want to use wildcard searches when using the `aws s3 ls` command to find specific products of interest. You may want to limit your results to products with specific track and/or frame numbers, acquisition dates, processing version, beam mode/polarization, or orbit direction. The product filenames contain all of this information, so to find the products you're looking for, you may want to consult @nisar-naming-conventions.
+As more data becomes available, you may want to use wildcard searches when using the `aws s3 ls` command to find specific products of interest. You may want to limit your results to products with specific track and/or frame numbers, acquisition dates, processing version, beam mode/polarization, or orbit direction. The product filenames contain all of this information, so to find the products you're looking for, you may want to consult [NISAR Naming Conventions](#naming-convention-overview).
 
 <!-- TODO: Add sample code snippet for a wildcard search to narrow down results -->
 

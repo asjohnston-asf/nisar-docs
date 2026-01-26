@@ -144,7 +144,7 @@ Understanding the [NISAR Naming Conventions](#naming-convention-overview) can be
 
 ### S3 Paths from Vertex
 
-When you search for NISAR data products in [Vertex](https://search.asf.alaska.edu/#/?maxResults=1000&dataset=NISAR), you can simply copy the S3 URL from the list of files for a search result, as shown in @vertex-s3-urls. 
+When you search for NISAR data products in [Vertex](https://search.asf.alaska.edu/#/?dataset=NISAR&prodConfig=PR&resultsLoaded=true), you can simply copy the S3 URL from the list of files for a search result, as shown in @vertex-s3-urls. 
 
 ```{figure} ../assets/vertex-s3-links.png
 :label: vertex-s3-urls

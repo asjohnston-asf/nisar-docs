@@ -100,13 +100,15 @@ For example:
 
 ### Polar Stereographic Tiling Scheme
 
-The Polar Stereographic files include a reference to the 100 x 100 km tile number. Tile coordinates are numbered from 06 to 73, with tiles 39 and 40 straddling the pole. @north-polar-grid and @south-polar-grid use the same tiling scheme and available data extent.
+The North Polar Stereographic (@north-polar-grid) and South Polar Stereographic (@south-polar-grid) datasets have equivalent tiling schemes and use a common naming convention.
+
+The coverage for these datasets is overlain with a 100 x 100 km grid, which is used to determine the extent of each DEM file. Tile coordinates (in both the X and Y axes of the grid) are numbered from 06 to 73, with tiles 39 and 40 straddling the pole. The tile coordinates are indicated in the name of each DEM file.
 
 For example:
-`DEM_11_00_23_00_C01.tif`  
+`DEM_20_00_64_00_C01.tif`  
 
-- `11` refers to the bottom-to-top Y coordinate of the tile
-- `23` refers tp the left-to-right X coordinate of the tile
+- `20` refers to the bottom-to-top Y coordinate of the tile
+- `64` refers tp the left-to-right X coordinate of the tile
 
 ```{figure} ../../assets/north-polar-grid.png
 :label: north-polar-grid
@@ -124,7 +126,25 @@ Gridding system for the North Polar Stereographic DEM dataset.
 Gridding system for the South Polar Stereographic DEM dataset.
 ```
 
-In Earthdata Search, each file is given a title that also includes the projection. These titles are based on the [S3 path](#s3-file-organization) where the files are stored.
+:::{warning}Duplicate Names for Polar Stereographic Files
+The dataset projection is not included in the DEM file names. Because the two Polar Stereographic datasets use the same naming scheme, the same file names will be present in both datasets. Use care when downloading DEM files from both of the Polar Stereographic datasets to avoid overwriting the files. 
+:::
+
+### Earthdata File Titles
+
+In Earthdata Search, each file is given a title that also includes the projection. These titles are based on the [S3 path](#s3-file-organization) where the files are stored, and results in a unique title for each file. While this is helpful during the search process, the filenames of the downloaded files will not match the titles displayed in Earthdata Search. 
+
+Examples: 
+
+- WGS84
+  - Earthdata title:`v1-2-EPSG4326-N20-N20_E160-DEM_N23_00_E162_00_C01-tif`
+  - File name: `DEM_N23_00_E162_00_C01.tif`
+- North Polar Stereographic
+  - Earthdata title: `v1-2-EPSG3413-60_40-DEM_73_00_43_00_C01-tif`
+  - File name: `DEM_73_00_43_00_C01.tif`
+- South Polar Sterographic
+  - Earthdata title: `v1-2-EPSG3031-60_40-DEM_73_00_43_00_C01-tif`
+  - File name: `DEM_73_00_43_00_C01.tif`
 
 ## DEM File Types
 

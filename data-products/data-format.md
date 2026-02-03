@@ -1,10 +1,60 @@
-# Data Format
+# Data Format: HDF5
 
-(hdf5)=
-## HDF5
+## What is HDF5?
+NISAR GCOV products are delivered in HDF5, or Hierarchical Data Format version 5. HDF5 is a file format designed to store, organize, and access large scientific datasets. GCOV uses HDF5 to systematically organize radar data and metadata in a way that is both efficient and easy to read, share, and analyze.
 
-All NISAR standard products are in the [Hierarchical Data Format version 5 (HDF5)](https://www.hdfgroup.org/solutions/hdf5/). HDF5 is a general-purpose file format and programming library for storing scientific data. The flexible format allows establishing structure to data and metadata. 
+HDF was originally developed by the University of Illinois' National Center for Supercomputing Applications (NCSA) to support data sharing within the scientific community. HDF5 represents a significant redesign compared to earlier versions of HDF, with a more flexible and powerful internal structure. For additional details, users can consult the official HDF documentation at
+<https://portal.hdfgroup.org/display/HDF5/HDF5>.
 
-While the files are stored in HDF5 format, the internal structure of the NISAR products is compliant with the [Climate and Forecast (CF) metadata convention](https://cfconventions.org/) of the Network Common Data Form (netCDF) format. This can cause problems when using some HDF5 drivers to read the data. While ArcGIS Pro introduced support for reading NISAR HDF5 files with version 3.4.0, there is not yet a NISAR-compliant HDF5 reader for GDAL.
 
-Those who use GDAL to read files for use in QGIS or programmatic workflows can  replace the ‘.h5’ NISAR product extension to ‘.nc’. This allows GDAL to recognize the spatial coordinate system and project the file appropriately. Refer to [ASF’s documentation on workarounds](https://www.earthdata.nasa.gov/learn/tutorials/work-nisar-sample-data) for accessing NISAR HDF5 files.
+At a high level, an HDF5 file functions as a container that organizes data into a hierarchy of objects, such as **{abbr}`groups(A folder within an HDF5 file)`**, **{abbr}`datasets(The actual data values stored in an HDF5 file)`**, and **{abbr}`datatypes(The type and format of data)`**. In general, radar layers are organized **{abbr}`frequencyA(Lower portion of the radar bandwidth)`**/ and (potentially) **{abbr}`frequencyB(Higher portion of the radar signal)`**/. Note that nothing stored at the root `/`.
+
+
+### Groups
+An HDF5 **{abbr}`group(A folder within an HDF5 file)`** is a folder within an HDF5 file. Groups can hold datasets, datatypes, and other groups (subfolders). In essence, groups act like directories on computers. Path navigation is identical to that of Unix path navigation: `/`.
+
+### Datasets
+An HDF5 **{abbr}`dataset(A collection of data values stored in an HDF5 file)`** is where the actual data lives. This might be an array or table stored within the HDF5 file. Each dataset will include the data, a **{abbr}`dataspace(Describing the shape of the data)`**, a **{abbr}`datatype(What values are: integers, floats, etc)`**, and other optional attributes such as units, range, time, and other descriptions. 
+
+
+### Attributes
+An HDF5 **attribute** is a small piece of information that describes a **{abbr}`group(A folder within an HDF5 file)`** or **{abbr}`dataset(A collection of data values stored in an HDF5 file)`**. Note that an attribute does not store the data itself. Attributes provide important context that help correctly interpret values within a dataset. Common examples include:
+- Units of measurement
+- Descriptions of what the data represent
+- Valid ranges, dates of acquisition
+- Processing details
+  
+Storing this information with the data helps ensure that datasets can be understood and used correctly without relying on external documentation.
+
+### Datatypes
+
+An HDF5 datatype describes the kind of data that is being stored. A datatype explains both how to interpret a dataset and how it is stored. Datatypes are categorized into three types: **{abbr}`atomic datatypes(Basic building blocks)`**, **{abbr}`composite datatypes(Combinations of atomic types)`**, and **{abbr}`named datatypes(Ways of storing and sharing datatypes)`**. 
+    
+### Atomic Datatypes
+**{abbr}`Atomic datatypes(Basic building blocks)`** are typically the simplest datatypes. They serve as building blocks for more complex datatypes. Common atomic datatypes include:
+- Time
+- Bitfield
+- String
+- Reference
+- Opaque
+- Integer
+- Float
+
+**{abbr}`Derived datatypes(Customized versions of atomic datatypes)`** are customized atomic types, commonly used for N-bit integers, floating-point formats, and other nonstandard data representations. They enable efficient and precise storage when data do not conform to standard numeric formats. Derived datatypes are useful because they: 
+- Allow custom storage with specific bit lengths
+- Support values that do not follow standard integer or floating-point formats
+- Preserve the original format in which the data were recorded
+
+### Composite Datatypes
+**{abbr}`Composite datatypes(Combinations of atomic types)`** combine multiple atomic datatypes into more complex structures. Common composite datatypes include: 
+- **{abbr}`Array datatypes(Fixed-size, multi-dimensional arrays treated as a single unit)`**
+- **{abbr}`Variable-length datatypes(One-dimensional arrays whose length can vary between elements)`**
+- **{abbr}`Compound datatypes(Collections of named fields, each with its own datatype)`**
+- **{abbr}`Enumeration datatypes(Map integer values to named labels)`**
+
+
+### Named Datatypes
+**{abbr}`Named datatypes(Ways of storing and sharing datatypes)`** are stored as objects within an HDF5 file. Any datatype (atomic, derived, or composite) can be named or referenced throughout the file.
+Naming allows datatypes to be:
+- Shared across datasets and attributes
+- Reused simply and consistently

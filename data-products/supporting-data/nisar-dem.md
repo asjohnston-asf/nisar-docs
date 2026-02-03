@@ -88,6 +88,8 @@ Visualization of the South Polar Stereographic DEM for NISAR. This dataset provi
 
 The actual filenames of the DEM tiles are quite basic, differing only by the indication of the geographic location of the tile. While the naming scheme allows for decimal degrees, product names for all tiles use `_00` in the decimal place.
 
+#### WGS84 Tiling Scheme
+
 The WGS84 files include the latitude and longitude of the lower left corner of the tile.
 
 For example: 
@@ -95,6 +97,8 @@ For example:
 
 - `N17` indicates that the lower left corner of the tile is at 17°N
 - `E135` indicates that the lower left corner of the tile is at 135°E
+
+#### Polar Stereographic Tiling Scheme
 
 The Polar Stereographic files include a reference to the 100 x 100 km tile number. Tile coordinates are numbered from 06 to 73, with tiles 39 and 40 straddling the pole. @north-polar-grid and @south-polar-grid use the same tiling scheme and available data extent.
 

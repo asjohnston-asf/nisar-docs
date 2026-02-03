@@ -127,7 +127,9 @@ Gridding system for the South Polar Stereographic DEM dataset.
 ```
 
 :::{warning}Duplicate Names for Polar Stereographic Files
-The dataset projection is not included in the DEM file names. Because the two Polar Stereographic datasets use the same naming scheme, the same file names are present in both datasets. Use care when downloading DEM files from both of the Polar Stereographic datasets to avoid overwriting the files. 
+The dataset projection is not included in the DEM file names. Because the two Polar Stereographic datasets use the same naming scheme, the same file names are present in both datasets. 
+
+Use care when downloading DEM files from both of the Polar Stereographic datasets to avoid overwriting files. 
 :::
 
 ### Earthdata File Titles

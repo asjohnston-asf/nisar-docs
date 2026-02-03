@@ -84,11 +84,11 @@ Visualization of the South Polar Stereographic DEM for NISAR. This dataset provi
 {sup}`*` While the polar stereographic datasets have a pixel spacing of 20 meters, they are derived from the Copernicus 30-m DEM, so the resolution is coarser than the pixel spacing.
 :::
 
-### DEM Naming Conventions
+## DEM Naming Conventions
 
 The actual filenames of the DEM tiles are quite basic, differing only by the indication of the geographic location of the tile. While the naming scheme allows for decimal degrees, product names for all tiles use `_00` in the decimal place.
 
-#### WGS84 Tiling Scheme
+### WGS84 Tiling Scheme
 
 The WGS84 files include the latitude and longitude of the lower left corner of the tile.
 
@@ -98,7 +98,7 @@ For example:
 - `N17` indicates that the lower left corner of the tile is at 17°N
 - `E135` indicates that the lower left corner of the tile is at 135°E
 
-#### Polar Stereographic Tiling Scheme
+### Polar Stereographic Tiling Scheme
 
 The Polar Stereographic files include a reference to the 100 x 100 km tile number. Tile coordinates are numbered from 06 to 73, with tiles 39 and 40 straddling the pole. @north-polar-grid and @south-polar-grid use the same tiling scheme and available data extent.
 
@@ -126,18 +126,18 @@ Gridding system for the South Polar Stereographic DEM dataset.
 
 In Earthdata Search, each file is given a title that also includes the projection. These titles are based on the [S3 path](#s3-file-organization) where the files are stored.
 
-### DEM File Types
+## DEM File Types
 
 The actual DEM data is contained in tiled assemblages of Cloud Optimized GeoTIFF (COG) files, but the NISAR_DEM collection also includes [VRT](#vrt-reference-files) files. VRTs are virtual files that reference the tiled DEM COGs, allowing them to be visualized as a mosaic. <!-- #TODO: Add reference to the product spec -->
 
-#### Tiled DEM COG Files
+### Tiled DEM COG Files
 
 The DEM height values are contained in the COG files. The files are tiled to provide complete coverage for each of the [projection-based datasets](#dem-datasets) included in the DEM collection. The tiling scheme differs based on the projection, as indicated in @tbl:nisar-dem-characteristics.
 
 These files have an extension of `.tif`.
 
 (vrt-reference-files)=
-#### VRT Reference Files
+### VRT Reference Files
 
 To facilitate visualization and subsetting of the tiled DEM COG files, [VRT](https://gdal.org/en/stable/drivers/vector/vrt.html) files are available for each polarization. These VRT files are just a metadata file, and require access to the associated DEM COG files to be useful. 
 

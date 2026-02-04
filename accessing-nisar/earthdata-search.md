@@ -13,7 +13,7 @@ short_title: Earthdata Search
 Upon navigating to [Earthdata Search](https://search.earthdata.nasa.gov/ ), users can log in using their [Earthdata login credentials](https://urs.earthdata.nasa.gov/) to download data.  An EDL account is free to create and provides unified access to Earth science data distributed by [NASA'S Earth Observation System Data and Information System (EOSDIS)](https://www.earthdata.nasa.gov/about/esdis/eosdis), independent of the data provider.
 
 ### 2. Search for NISAR data products
-Searching for NISAR products can be done using the search bar or the filter selection. 
+NISAR products can be discovered using either the search bar or filter selection.
 
 To search for a specific product type, you can input the product name or short name from @tbl:earthdata-search-shortname-list. 
 
@@ -34,7 +34,8 @@ To search for a specific product type, you can input the product name or short n
 
 :::
 
-To search for all NISAR data products, use the filter options on the left-hand side of the window, as seen in @earthdata-search-nisar-filters. By setting the "platform" filter to `NISAR` and the "Processing Level" filter to the processing level you are interested in, the desired products will be listed. 
+To search for all NISAR data products, use the filter options on the left-hand panel, as shown in @earthdata-search-nisar-filters. Set the "platform" filter to `NISAR` and the "Processing Level" filter to the desired product level.  The results will update to display all NISAR product data types that fit the selected criteria. 
+
 ```{figure} ../assets/earthdata-search-nisar-filters.png
 :label: earthdata-search-nisar-filters
 :alt: Screenshot showing the platform and processing level filters in Earthdata Search selected to be NISAR and Level 2 and Level 3, respectively. 
@@ -44,21 +45,7 @@ Setting the platform filter to NISAR and the processing level to 2 and 3 will fi
 ```
 
 ### 3. Filter NISAR data for desired granule
-Once you've narromed down to the data type you are looking for, you can search products via a variety of filters. A selection of filters appears on the left-hand side of the screen, as shown by @earthdata-search-filters
-* Results can be filtered using parameters:
-  * Granule ID
-  * Spatial AOI
-  * Temporal Range
-  * Orbit Number
-  * Data Access
-
-```{figure} ../assets/earthdata-search-filters.png
-:label: earthdata-search-filters
-:alt: Screenshot showing the "Filter Granules" bar for GCOV products.  
-:align: center
-
-Filter Earthdata Search results to refine the number of granules to your desired area of interest. 
-```
+After narrowing the results to the desired data type, use the available filters to further refine the product search. 
 
 To search for a specific geographic region, use the `Spatial Search` button. This will prompt you to enter coordinates or draw a rectangle, polygon, circle, or point or enter a geospatial file to search. 
 
@@ -70,14 +57,25 @@ To search for a specific geographic region, use the `Spatial Search` button. Thi
 Search by drawing a region of interest or entering coordinates using the "Spatial" search filter. This example shows a rectangular search, but users can also search using a polygon, circle, point, or geospatial file. 
 ```
 
-To search for products during a specific date range, use the `Temporal Search` button. A date range can be entered and then searched for. 
-
+To search for products during a specific date range, use the `Temporal Search` button. This filter searches for products between a start date and end date, with the option to find products that occur on an annual basis by checking the "Use a recurring date range" button. 
 ```{figure} ../assets/earthdata-search-temporal-search.png
 :label: earthdata-search-temporal-search
 :alt: Screenshot showing the temporal search of GCOV products. 
 :align: center
 
 Search using a date range with the "Temporal" search filter. 
+```
+
+The filter panel on the left hand side of the screen allow for users to search using Granule Ids, dates, data availability, orbit numbers, and equatorial crossing longitude and dates.
+
+Use the "Granule ID" filter to perform advanced searches, including wildcard matching and searches for multiple Granule IDs separated by commas. The question mark (?) wildcard matches a single character at the specified position, while the asterisk (*) wildcard matches any number of characters at the specified position. For example, searching for `NISAR_L2_UR_GCOV*` would return all urgent response GCOV products. 
+
+```{figure} ../assets/earthdata-search-filters.png
+:label: earthdata-search-filters
+:alt: Screenshot showing the "Filter Granules" bar for GCOV products.  
+:align: center
+
+Filter Earthdata Search results to refine the number of granules to your desired area of interest. 
 ```
 
 ### 4. Download data

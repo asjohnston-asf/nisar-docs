@@ -14,7 +14,7 @@ Those who use GDAL to read files for use in QGIS or programmatic workflows can r
 HDF was originally developed by the University of Illinois' National Center for Supercomputing Applications (NCSA) to support data sharing within the scientific community. HDF5 represents a significant redesign compared to earlier versions of HDF, with a more flexible and powerful internal structure. For additional details, users can consult the official HDF documentation at
 <https://support.hdfgroup.org/documentation/>.
 
-At a high level, an HDF5 file functions as a container that organizes data into a hierarchy of objects, such as **{abbr}`groups(A folder within an HDF5 file)`**, **{abbr}`datasets(The actual data values stored in an HDF5 file)`**, and **{abbr}`datatypes(The type and format of data)`**. In general, radar layers are organized into two groups: **{abbr}`frequencyA(Lower portion of the radar bandwidth)`**/ and (potentially) **{abbr}`frequencyB(Higher portion of the radar signal)`**/. Note that nothing stored at the root `/`.
+At a high level, an HDF5 file functions as a container that organizes data into a hierarchy of objects, such as **{abbr}`groups(A folder within an HDF5 file)`**, **{abbr}`datasets(The actual data values stored in an HDF5 file)`**, and **{abbr}`datatypes(The type and format of data)`**. In general, radar layers are organized into two groups: **{abbr}`frequencyA(Lower portion of the radar bandwidth)`**/ and (potentially) **{abbr}`frequencyB(Higher portion of the radar signal)`**/. Note that nothing is stored at the root `/`.
 
 ## Groups
 

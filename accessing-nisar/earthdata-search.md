@@ -20,7 +20,7 @@ Earthdata Search organizes data by product type (called a "collection" in Earthd
 Search using the search bar. 
 ```
 
-To search for a specific product type, input the corresponding short name from @tbl:earthdata-search-shortname-list into the search bar. For a description NISAR's data product types, see @data-products-overview. 
+To search for a specific product type, input the corresponding short name from @tbl:earthdata-search-shortname-list into the search bar. For a description of NISAR's data product types, see @data-products-overview. 
 
 :::{table} NISAR Data Product Earthdata Search Short Name List
 :label: tbl:earthdata-search-shortname-list

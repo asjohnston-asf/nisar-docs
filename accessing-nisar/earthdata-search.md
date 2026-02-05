@@ -9,17 +9,10 @@ short_title: Earthdata Search
 
 ## Using Earthdata Search to Access NISAR Data 
 
-### 1. Go to https://search.earthdata.nasa.gov/ and log in using your Earthdata credentials
-Upon navigating to [Earthdata Search](https://search.earthdata.nasa.gov/ ), users can log in using their [Earthdata login credentials](https://urs.earthdata.nasa.gov/) to download data.  An EDL account is free to create and provides unified access to Earth science data distributed by [NASA'S Earth Observation System Data and Information System (EOSDIS)](https://www.earthdata.nasa.gov/about/esdis/eosdis), independent of the data provider.
+### 1. Filter by data product type
+Earthdata Search organizes data by product type (called a "collection" in Earthdata Search). A collection must be selected before doing any additional filtering. 
 
-<a href="https://search.earthdata.nasa.gov/">
-<img id="earthdata-search-login" src="../assets/earthdata-search-login.png" alt="Image of the Earthdata Search web interface">
-</a>
-
-### 2. Search for NISAR data products
-NISAR products can be discovered using either the search bar or filter selection.
-
-To search for a specific product type, you can input the product name or short name from @tbl:earthdata-search-shortname-list. 
+To search for a specific product type, input the corresponding short name from @tbl:earthdata-search-shortname-list into the search bar. For a description of the available data product types, see @data-products-overview. 
 
 :::{table} NISAR Data Product Earthdata Search Short Name List
 :label: tbl:earthdata-search-shortname-list
@@ -48,8 +41,8 @@ To search for all NISAR data products, use the filter options on the left-hand p
 Setting the platform filter to NISAR and the processing level to 2 and 3 will filter to show analysis-ready NISAR data products.
 ```
 
-### 3. Filter NISAR data for desired granule
-After narrowing the results to the desired data type, use the available filters to further refine the product search. 
+### 2. Filter for desired products
+After selecting a collection, use the available filters to refine the list of products. Individual data products are called "granules" in Earthdata Search.  
 
 To search for a specific geographic region, use the `Spatial Search` button. This will prompt you to enter coordinates or draw a rectangle, polygon, circle, or point or enter a geospatial file to search. 
 
@@ -70,27 +63,32 @@ To search for products during a specific date range, use the `Temporal Search` b
 Search using a date range with the "Temporal" search filter. 
 ```
 
-The filter panel on the left hand side of the screen allow for users to search using Granule Ids, dates, data availability, orbit numbers, and equatorial crossing longitude and dates.
+Use the "Granule ID" filter to perform advanced searches, including wildcard matching and searches for multiple Granule IDs separated by commas. The question mark (?) wildcard matches a single character at the specified position, while the asterisk (*) wildcard matches any number of characters at the specified position. For example, searching for `*_QP*` would return Quad-Polarity acquisitions. To review NISAR product naming conventions and elements, see @naming-convention-overview. 
 
-Use the "Granule ID" filter to perform advanced searches, including wildcard matching and searches for multiple Granule IDs separated by commas. The question mark (?) wildcard matches a single character at the specified position, while the asterisk (*) wildcard matches any number of characters at the specified position. For example, searching for `NISAR_L2_UR_GCOV*` would return all urgent response GCOV products. 
-
-```{figure} ../assets/earthdata-search-filters.png
-:label: earthdata-search-filters
-:alt: Screenshot showing the "Filter Granules" bar for GCOV products.  
+```{figure} ../assets/earthdata-search-granule-search.png
+:label: earthdata-search-granule-search
+:alt: Screenshot showing a Granule ID search using `*_QP*` to find quad polarity GCOV products.   
 :align: center
 
-Filter Earthdata Search results to refine granule options. 
+Filter using the Granule ID filter set to `*_QP*` to find all quad polarity products. 
 ```
 
-### 4. Download data
+### 3. Download data
+
+Downloading data via Earthdata Search requires logging in with your [Earthdata Login (EDL)](https://urs.earthdata.nasa.gov/) account.  An EDL account is free to create and provides unified access to Earth science data distributed by [NASA'S Earth Observation System Data and Information System (EOSDIS)](https://www.earthdata.nasa.gov/about/esdis/eosdis), independent of the data provider.
+
+
 Individual granules can be downloaded directly from the Earthdata Search results. Select the download icon associated with the desired granule to save the file locally.
-For information on accessing data using the AWS CLI, see [the S3 access page](#s3-paths-earthdata-search). 
-For guidance on downloading multiple files in bulk, refer to the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/how-tos/find-data/earthdata_search.html). 
 
 ```{figure} ../assets/earthdata-search-download-GCOV.png
 :label: earthdata-search-download-GCOV
 :alt: Screenshot showing how to select and download a single GCOV granule.  
 :align: center
 
-Click the download icon, toggle to "Download Files", and click the download icon next to the filename to download your desired granule directly. 
+Log in with EDL credentials by clicking the "Log In" button (#1) on the upper right-hand side of the screen. Once ready to download, click the download icon (#2), toggle to "Download Files", and click the download icon next to the filename to download your desired granule directly. 
 ```
+
+For guidance on downloading multiple files in bulk, refer to the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/how-tos/find-data/earthdata_search.html). 
+
+
+For information on accessing data using the AWS CLI, see [the S3 access page](#s3-paths-earthdata-search).

@@ -76,6 +76,7 @@ project:
     DAAC: Distributed Active Archive Center
     DEM: Digital Elevation Model
     EDC: Earthdata Cloud
+    EDL: Earthdata Login
     ESDIS: Earth Science Data and Information System
     GCOV: Geocoded Polarimetric Covariance
     GOFF: Geocoded Pixel Offsets

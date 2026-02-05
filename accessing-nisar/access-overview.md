@@ -50,10 +50,8 @@ Refer to the [Vertex User Manual](https://docs.asf.alaska.edu/vertex/manual/) fo
 <img id="earthdata-search-page" src="../assets/earthdata-search-page.png" alt="Image of the Earthdata Search web interface">
 </a>
 
---
-<!-- TODO: uncomment this line (and 2-dash separator above) once the Earthdata Search page is populated -->
 
-[//]: # ([Learn more about using Earthdata Search to access NISAR data!]&#40;earthdata-search#earthdata-search&#41;)
+[Learn more about using Earthdata Search to access NISAR data!](earthdata-search#earthdata-search)
 
 ## Programmatic Access
 

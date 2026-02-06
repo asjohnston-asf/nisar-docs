@@ -32,14 +32,9 @@ Map-based web interfaces make it easy to explore data available for a particular
 <img id="vertex-nisar-screenshot" src="../assets/vertex-nisar-screenshot.png" alt="Searching for NISAR data on ASF's Vertex Data Search site">
 </a>
 
-Because search parameters of interest for SAR differ from other types of Earth observation data, it can be helpful to use a platform that is tailored to the parameters and characteristics of SAR data. This is particularly useful for those who are less familiar with SAR data products and may need more guidance to find the appropriate dataset for their use case. 
-
 Refer to the [Vertex User Manual](https://docs.asf.alaska.edu/vertex/manual/) for more guidance on search capabilities. 
 
---
-<!-- TODO: uncomment this line (and 2-dash separator above) once the Vertex page is populated -->
-
-[//]: # ([Learn more about using Vertex to search for NISAR data!]&#40;vertex#vertex-data-search&#41;)
+[Learn more about using Vertex to search for NISAR data!](vertex#vertex-overview)
 
 (earthdata-search)=
 ### Earthdata Search

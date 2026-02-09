@@ -62,7 +62,9 @@ For the time being, you must use the `endpoint=` parameter for NISAR data. Using
 import earthaccess
 
 auth = earthaccess.login()
-s3_credentials = auth.get_s3_credentials(endpoint='https://nisar.asf.earthdatacloud.nasa.gov/s3credentials')
+
+endpoint = 'https://nisar.asf.earthdatacloud.nasa.gov/s3credentials'
+s3_credentials = auth.get_s3_credentials(endpoint=endpoint)
 ```
 
 which will print, for example:

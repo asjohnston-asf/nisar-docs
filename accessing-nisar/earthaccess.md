@@ -89,7 +89,12 @@ opens and the first file object can be passed to tools like [`xarray`](https://d
 ```python
 import xarray as xr
 
-ds = xr.open_datatree(file_objects[0], engine='h5netcdf', decode_timedelta=False, phony_dims="access")
+ds = xr.open_datatree(
+    file_objects[0],
+    engine='h5netcdf',
+    decode_timedelta=False,
+    phony_dims="access"
+)
 ```
 
 using `earthaccess.open` is the easiest way to start streaming NISAR data, and it will attempt to smartly pick the right protocol and defaults to provide good performance across all NASA data. However, you may be able to fine-tune steaming performance for your NISAR product(s) and access patterns. The next two example show you how to use a specific protocol and set `fsspec` options.
@@ -152,7 +157,8 @@ fsspec_config = {
     'block_size': 16*1024*1024,  # 16 MB
 }
 
-fs = earthaccess.get_s3_filesystem(endpoint='https://nisar.asf.earthdatacloud.nasa.gov/s3credentials')
+endpoint = 'https://nisar.asf.earthdatacloud.nasa.gov/s3credentials'
+fs = earthaccess.get_s3_filesystem(endpoint=endpoint)
 ds = xr.open_datatree(
    fs.open(s3_links[0], **fsspec_config),
    engine='h5netcdf',

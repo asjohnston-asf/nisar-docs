@@ -127,7 +127,7 @@ ds = xr.open_datatree(
 
 ### Example: Streaming via S3
 
-This end-to-end example gets searches for a single NISAR GCOV product, retrieves the S3 access URI, sets custom `fsspec` configuration, and opens the GCOV granule with `xarray` using the `h5netcdf` engine.
+This end-to-end example gets searches for a single NISAR GCOV product, retrieves the S3 access URI, sets custom `fsspec` configuration, and opens the GCOV granule with `xarray` using the `h5netcdf` engine. Behind the scenes, `earthaccess` will request temporary AWS credentials for you, which is described on the [AWS S3 Access page](aws-s3-access). 
 
 :::{warning}Must be in AWS `us-west-2`
 Direct AWS S3 access is only available for resources (e.g., EC2) in the AWS `us-west-2` region.

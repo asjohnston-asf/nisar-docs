@@ -27,9 +27,6 @@ Toggle on drawing mode to draw a region of interest to search for products that 
 :alt: Screenshot of Vertex highlighting the "Geographic Search" option to draw a region of interest to search for products. 
 :align: center
 
-Using the "Geographic Search" type, toggle into drawing mode to draw a region of interest to search for NISAR products. 
-```
-
 Click the **Filters** button to expose additional parameters that can be used to narrow your search. 
 Select a date range by entering a start and end date to search. Toggling on "Seasonal Search" allows to search for products produced annually within an overall date range.  
 

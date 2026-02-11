@@ -87,6 +87,7 @@ Users can also search by Track and Frame. Note that Track is NISAR's convention 
 ### 3. Download data
 
 Data are free and available to download through Vertex. Once the desired scene is selected, click on the shopping cart icon in the scene listed. This will add the scene to your Downloads, which is the shopping cart icon on the top right hand of the screen. 
+
 ```{figure} ../assets/vertex-add-to-downloads.png
 :label: vertex-add-to-downloads
 :alt: Screenshot highlight the download button next to desired product and the "Downloads" icon that will dispaly file options. 

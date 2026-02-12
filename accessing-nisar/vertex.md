@@ -31,7 +31,7 @@ Toggle on drawing mode to draw a region of interest to search for products that 
 ```
 Click the **Filters** button to expose additional parameters that can be used to narrow your search. 
 
-The **Filters** panel enables date-based filtering. Specify a start and end date to define the search range. Toggling on "Seasonal Search" allows retrival of products generated annually within the selected overall date range.
+The **Filters** panel enables date-based filtering. Specify a start and end date to define the search range. 
 
 ```{figure} ../assets/vertex-date-filters.png
 :label: vertex-date-filters

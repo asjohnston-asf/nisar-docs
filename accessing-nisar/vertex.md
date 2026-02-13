@@ -1,11 +1,11 @@
 ---
-short_title: Vertex Data Search
+short_title: Vertex 
 ---
 
 # Finding NISAR Data with Vertex
 
 (vertex-overview)=
-## Vertex Data Search
+## Vertex
 [Vertex](https://search.asf.alaska.edu/#/?dataset=NISAR&prodConfig=PR) is ASF's web-based method to search for NISAR data products. Because search parameters for SAR differ from other types of Earth observation data, it can be helpful to use a platform that is tailored specifically for SAR data. This is useful for those who are less familiar with SAR data products and may need more guidance to find the appropriate data products for their use case. 
 
 ## Using Vertex to Access NISAR Data
@@ -23,7 +23,7 @@ Click on the "Dataset" button and select "NISAR" to search for NISAR products.
 
 ### 2. Filter for desired products
 
-To search for specific geographic region, click on the left-most "Area of Interest" button to select to draw a point, line, polygon, box, circle, or by uploading a geospatial file. Toggle on drawing mode to draw a region of interest to search for products that lie within that area. Then press **Search** to update the search for the new region of interest.
+To search for specific geographic region, click on the left-most **Area of Interest** button to select to draw a point, line, polygon, box, circle, or by uploading a geospatial file. Toggle on drawing mode to draw a region of interest to search for products that lie within that area. Then press **Search** to update the search for the new region of interest.
 
 ```{figure} ../assets/vertex-geographic-search.png
 :label: vertex-geographic-search

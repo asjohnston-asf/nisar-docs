@@ -82,7 +82,7 @@ NISAR-specific filters in Vertex.
 
 :::
 
-Users can also search by **Track and Frame**. Note that "Track" is NISAR's convention for what is referred to as "Path" for Sentinel-1 products. Searching for a specific track and frame will return scenes that occur consistently over a specific area. The NISAR track-frame map for available NISAR data is available on the [NISAR Mission website](https://science.nasa.gov/mission/nisar/data/). 
+Users can also search by **Track and Frame**. Note that "Track" is also known as "Path" or "Relative Orbit" for other satellite missions, such as Sentinel-1. Searching for a specific track and frame will return scenes that occur consistently over a specific area. The NISAR track-frame map for available NISAR data is available on the [NISAR Mission website](https://science.nasa.gov/mission/nisar/data/). 
 
 ### 3. Download data
 

@@ -141,7 +141,7 @@ Filter using the Granule ID filter set to `*_QP*` to find all quad-pol products.
 
 ### 3. Access desired products
 
-There are two options for accessing NISAR data from your search results. You can either [download](#download-nisar-data-earthdata-search) it, or use direct [AWS S3 Access](#direct-s3-access-in-earthdata) to work with the data directly in the cloud. 
+There are two options for accessing NISAR data from your search results. You can either [download](#download-nisar-data-earthdata-search) it, or use direct [AWS S3 Access](#direct-s3-access-in-earthdata) paths to work with the data directly in the cloud. 
 
 (download-nisar-data-earthdata-search)=
 #### Downloading NISAR Data 

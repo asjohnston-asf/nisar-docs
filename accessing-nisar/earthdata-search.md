@@ -101,7 +101,7 @@ Search by drawing a region of interest or entering coordinates using the **Spati
 (earthdata-search-temporal-filters)=
 #### Temporal filters
 
-To search for products in a specific date range, use the **Temporal Search** button. This filter searches for products between a start and end date.
+To search for products in a specific date range, use the **Temporal Search** button. This filter searches for products between the specified start and end date/time.
 
 ```{figure} ../assets/earthdata-search-temporal-search.png
 :label: earthdata-search-temporal-search
@@ -111,7 +111,7 @@ To search for products in a specific date range, use the **Temporal Search** but
 Search using a date range with the **Temporal** search filter. 
 ```
 
-To search for products for a specific date range on an annual basis, check the box next to **Use a recurring date range**. You will be prompted for a month/day for the start and stop dates, and can select the range of years to include. 
+To search for products for a specific date range on an annual basis, check the box next to **Use a recurring date range**. You will be prompted for a month/day (and optionally a time) for the start and stop dates, and can select the range of years to include. 
 
 ```{figure} ../assets/earthdata-search-temporal-recurring.png
 :label: earthdata-search-temporal-recurring

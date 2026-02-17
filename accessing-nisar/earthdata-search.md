@@ -99,4 +99,4 @@ Log in with EDL credentials by clicking the "Log In" button (#1) on the upper ri
 For guidance on downloading multiple files in bulk, refer to the [NASA Earthdata Cloud Cookbook](https://nasa-openscapes.github.io/earthdata-cloud-cookbook/how-tos/find-data/earthdata_search.html). 
 
 
-For information on accessing data using the AWS CLI, see @s3-paths-earthdata-search.
+For information on accessing data using the AWS S3 Access, see @aws-s3-access-overview.

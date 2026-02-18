@@ -45,5 +45,5 @@ results.download(path='/Users/SARGuru/data', session=session)
 ```
 Alternatively, users may [configure a local `.netrc` file](https://nsidc.org/data/user-resources/help-center/creating-netrc-file-earthdata-login) to store their EDL credentials. Once the `.netrc` file is properly set up, downloads can be performed without explicitly passing credentials:
 ```python
-results.download(path='/Users/SARGuru/data')
+results.download(path='path/to/data/')
 ```

@@ -36,7 +36,7 @@ Refer to the [Searching page of the ASF Data Search Manual](https://docs.asf.ala
 
 ## Download data
 
-Downloading NISAR data requires authentication through a [Earthdata Login (EDL)](https://urs.earthdata.nasa.gov/) profile. For more information, see @earthdata-login. 
+Downloading NISAR data requires authentication through [Earthdata Login (EDL)](https://urs.earthdata.nasa.gov/). For more information, see @earthdata-login. 
 
 EDL credentials can be provided to `asf_search` using the `ASFSession` class, which is a subclass of `Session`. After creating an authenticated `ASFSession`, pass the session object to the download function along with the target directory path where the data will be saved.
 ```python 

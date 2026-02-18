@@ -94,7 +94,7 @@ Individual data products are called “granules” in Earthdata Search.
 
 Refine your search further to identify granules available in a [particular location](#earthdata-search-spatial-filters), for a [specified time range](#earthdata-search-temporal-filters), or with [specific characteristics](#earthdata-search-advanced-filters) indicated in the product filename. 
 
-Once you have refined your search, click on the desired collection in the search results ([](#earthdata-search-collection-results-a)) to explore the specific granules available for that collection. 
+Once you have refined your search, click on the desired collection in the search results ([](#earthdata-search-collection-results-a)) to view the specific granules available for that collection. 
 
 While you can apply the same search filters to multiple collections, you need to click on each collection in turn to see the available granules. Use the Search Results link ([](#earthdata-search-collection-results-b)) to return to the list of collections if you want to select a different collection.
 

@@ -32,6 +32,8 @@ Search using the search bar on the Earthdata Search landing Page.
 
 - To search for a specific product type, input the corresponding short name from @tbl:earthdata-search-shortname-list into the search bar. 
 
+- To search for ancillary datasets such as orbit ephemeris files or the DEM used to process NISAR products, input the corresponding short name from @tbl:earthdata-search-supporting-shortname-list into the search bar.
+
 :::{table} NISAR Data Product Short Names
 :label: tbl:earthdata-search-shortname-list
 

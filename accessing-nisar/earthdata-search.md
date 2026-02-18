@@ -100,7 +100,7 @@ While you can apply the same search filters to multiple collections, you need to
 
 :::{figure}
 :label: earthdata-search-collection-results
-:alt: Series of two screen shots illustrating how to view the granules for multiple collections in Earthdata Search results
+:alt: Series of two screenshots illustrating how to view the granules for multiple collections in Earthdata Search results
 :class: grid grid-cols-2 gap-4
 Explore results for multiple collections.
 

@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Expanded Earthdata Search guidance page
+- Updated the processing levels diagram
+- Updated guidance on the NISAR earthaccess endpoint
 
 ## [0.2.9]
 

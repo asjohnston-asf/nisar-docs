@@ -22,7 +22,7 @@ For more information about this data release, refer to the [NISAR Sample Product
 The February release of NISAR uncalibrated data includes a global dataset, representative of the final product distribution of all NISAR products. These products include available Level-1 to Level-3 products. @feb-26-data-release displays the data range of uncalibrated products included in this release. 
 
 
-```{figure} ../assets/feb-26-data-release
+```{figure} ../assets/feb-26-data-release.png
 :label: feb-26-data-release
 :alt: Map of uncalibrated products included in the February 2026 data release.  
 :align: center

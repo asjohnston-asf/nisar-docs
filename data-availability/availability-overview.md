@@ -19,7 +19,7 @@ The NISAR project is still in the early phases of calibration, so these products
 
 The February 2026 release of NISAR uncalibrated data includes a global dataset, representative of the final product distribution of all NISAR products. All Level-1 to Level-3 product types are available. 
 
-This release includes data acquired between October 17, 2025 and January 20, 2026. This includes up to 8 acquisitions per track frame. @feb-26-data-release displays the spatial extent of the data included in this release. For a more detailed acquisition map, see the [NISAR Spring 2026 Released Data Plan map](https://experience.arcgis.com/experience/0042193b06104889971cd77f505190e0). 
+This release includes data acquired between October 17, 2025 and January 20, 2026. This includes up to 8 acquisitions per track (both ascending and descending). @feb-26-data-release displays the spatial extent of the data included in this release. For a more detailed acquisition map, see the [NISAR Spring 2026 Released Data Plan map](https://experience.arcgis.com/experience/0042193b06104889971cd77f505190e0). 
 
 
 ```{figure} ../assets/feb-26-data-release.png

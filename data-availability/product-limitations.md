@@ -1,17 +1,9 @@
 ---
 short_title: Product Limitations
 ---
-# NISAR Pre-calibration Products Release Note
+# Pre-calibration Sample Products
 
-The purpose of this release is to provide the community with a large volume of global data products to allow development and testing of workflows to access the data and metadata for each product type and become familiar with the characteristics of the L-band products (data and ancillary data layers, metadata and product specifications, noise levels, resolution, etc.), and to begin working with the data in a substantive way. 
-
-These sample products are intended to help the user community prepare for managing NISAR’s large data volumes and to refine their processing pipelines as the archive grows, in anticipation of full global production and release of calibrated data in the June 2026 timeframe. Users will find a rich and unprecedented collection of polarimetric and interferometric products to explore, with fine resolution, accurate geolocation, and full of bio/geophysical features. 
-
-## Pre-calibration Sample Products
-
-Polarimetric and interferometric SAR data can have radiometric and phase related artifacts that are unavoidable or challenging to fully mitigate. Sidelobes visible in high contrast areas and phase unwrapping errors are two such features. For a new instrument producing global data products for the first time, there will necessarily be a need for optimization of the products over time.
-
-The NISAR project is still in the calibration and validation phase, and therefore these products are not yet fully calibrated. Through processing of the global data, the project has learned about some unique characteristics of this first-of-a-kind radar system and has identified required algorithm updates. As a result, these products have a number of features that are known to limit their use as science products and others that would be considered artifacts and are to be improved in future product releases. 
+The NISAR project is still in the calibration and validation phase, and therefore these products are not yet fully calibrated. Through processing of the global data, the project has learned about some unique characteristics of this first-of-a-kind radar system and has identified required algorithm updates. As a result, these products have a number of features that are known to limit their use as science products and others that would be considered artifacts and are to be improved in future product releases.
 
 Nonetheless, the data are expected to be of sufficient quality that most users will benefit from an early look at the products. Fully calibrated and algorithmically improved global products are anticipated for release in the June 2026 timeframe.
 

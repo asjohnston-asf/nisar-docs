@@ -7,7 +7,7 @@ The purpose of this release is to provide the community with a large volume of g
 
 These sample products are intended to help the user community prepare for managing NISAR’s large data volumes and to refine their processing pipelines as the archive grows, in anticipation of full global production and release of calibrated data in the June 2026 timeframe. Users will find a rich and unprecedented collection of polarimetric and interferometric products to explore, with fine resolution, accurate geolocation, and full of bio/geophysical features. 
 
-## Uncalibrated Sample Products
+## Pre-calibration Sample Products
 
 Polarimetric and interferometric SAR data can have radiometric and phase related artifacts that are unavoidable or challenging to fully mitigate. Sidelobes visible in high contrast areas and phase unwrapping errors are two such features. For a new instrument producing global data products for the first time, there will necessarily be a need for optimization of the products over time.
 
@@ -15,7 +15,7 @@ The NISAR project is still in the calibration and validation phase, and therefor
 
 Nonetheless, the data are expected to be of sufficient quality that most users will benefit from an early look at the products. Fully calibrated and algorithmically improved global products are anticipated for release in the June 2026 timeframe.
 
-## Uncalibrated Product Limitations
+## Pre-calibration Product Limitations
 
 ### Validity Mask Offset
 
@@ -85,7 +85,15 @@ Along-track pixel offset estimates (top), the interferometric correlation (middl
 
 - ROFF products for the ice sheets have severe, uncorrected ionospheric distortions in the azimuth offsets of up to a few pixels. In addition, the search radius used for offset tracking was too small to capture some fast motion (> a few thousand m/yr). The search radius will be expanded to capture the full range of motion in past and future acquisitions.
 
-- The boundary of the ionospheric phase layer has edge-effect artifacts. These artifacts originate from misaligned valid sample subswath masks in the input RSLC products and will be resolved in a future release. See Fig X
+- The boundary of the ionospheric phase layer has edge-effect artifacts, as illustrated in @lim-misaligned-mask-image. These artifacts originate from misaligned valid sample subswath masks in the input RSLC products and will be resolved in a future release.
+
+```{figure} ../assets/lim_misaligned_mask.png
+:label: lim-misaligned-mask-image
+:alt: Illustration of edge-effect artifacts at the boundary of the ionospheric phase layer
+:align: center
+
+Edge-effect artifacts at the boundary of the ionospheric phase layer.
+```
 
 #### Validity Mask Alignment
 

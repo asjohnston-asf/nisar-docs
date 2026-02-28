@@ -75,9 +75,14 @@ Some interferograms and range/Doppler offset products can exhibit very strong io
 
 This layer compensates ionospheric phase quite well in low to mid latitudes where ionospheric effects are moderate, but residual ionospheric signatures may remain, particularly in descending tracks (evening) and at all times in higher latitudes, where ionospheric effects can be more pronounced. 
 
-Figure X illustrates along-track pixel offset estimates (top), the interferometric correlation (middle) and the interferometric phase (bottom) near Crary Ice Rise in Antarctica.
+```{figure} ../assets/lim_pix_offset_estimate.png
+:label: pix-offset-estimate-image
+:alt: Illustration of along-track pixel offset estimates (top), the interferometric correlation (middle) and the interferometric phase (bottom) near Crary Ice Rise in Antarctica
+:align: center
 
-Fig X
+Along-track pixel offset estimates (top), the interferometric correlation (middle) and the interferometric phase (bottom) near Crary Ice Rise in Antarctica. 
+```
+
 - ROFF products for the ice sheets have severe, uncorrected ionospheric distortions in the azimuth offsets of up to a few pixels. In addition, the search radius used for offset tracking was too small to capture some fast motion (> a few thousand m/yr). The search radius will be expanded to capture the full range of motion in past and future acquisitions.
 
 - The boundary of the ionospheric phase layer has edge-effect artifacts. These artifacts originate from misaligned valid sample subswath masks in the input RSLC products and will be resolved in a future release. See Fig X

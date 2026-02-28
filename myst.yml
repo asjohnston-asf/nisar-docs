@@ -92,6 +92,7 @@ project:
     SAR: Synthetic Aperture Radar
     SNR: Signal-to-Noise Ratio
     UTM: Universal Transverse Mercator
+    RFI: Radio Frequency Interference
     RIFG: Range Doppler Wrapped Interferogram
     ROFF: Range Doppler Pixel Offsets
     RRSD: Radar Raw Signal Data
